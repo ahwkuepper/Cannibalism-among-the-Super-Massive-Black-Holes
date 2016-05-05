@@ -11,6 +11,8 @@ Summary of the code and the modifications we made.
 \subsubsection{Phase-space diffusion}
 
 \subsubsection{Gravitational wave recoils}
+The code \textsc{AR-Chain} includes PN terms up to order 2.5. The SMBHs can therefore merge via gravitational wave emission. We include gravitational wave recoils following the prescription outlined in \citet{Kulier_2015}, which is based on the fitting formula by \citet{Lousto12}. To save computational time, we assume that a merger will be inevitable when the separation between two SBHs gets smaller than 10\,000 Schwarzschild radii. At the moment of the merger, we assume that the spin vectors of the two SBHs are randomly aligned. This results in kick velocities of up to several thousand km\,s$^{-1}$, with a median kick of $\approx 290$\,km\,s$^{-1}$. Since our simulations focus on NSC with relatively low escape velocities, this implies that a majority of the merging SBHs escape from the NSCs. 
 
+Black holes can also eject each other via strong three-body interactions. We remove SBHs from the simulations once they move beyond 1\,kpc from the NSC, assuming that it will take them more than a Hubble time to find their way back into the center of the host galaxy.
 
 
