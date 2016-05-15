@@ -2,6 +2,12 @@
 
 \subsection{Merger tree}
 Where we got the merger data from and how we extracted it.
+- Using Andrea Kulier's cosmological simulation, we plotted galaxy masses as a function of time.
+- We took the data from the three most massive galaxies (ie, most massive at redshift z=0).
+- We curve-fit each galaxy's mass to polynomial functions of time.
+- We also curve-fit each galaxy's (accreted+seeded) central black hole mass to exponential functions of time.
+- We added those functions to the Fortran hermite code
+- We implemented the SO potential-density pair (using the m200, r200 from the fitting functions above, getting half-mass radius from NFW profile, and using it as half-mass radius for the SO profile).
 
 Simulation of Cen et al. (have to look up the year)
 
